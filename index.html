@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer-use cache for AI agents | Super</title>
+  <meta name="description" content="Learn how a computer-use cache makes repeated AI agent workflows cheaper and more reliable. See how Super replays real computer actions instead of paying per run." />
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:title" content="Computer-use cache for AI agents" />
+  <meta property="og:description" content="A practical guide to computer-use cache workflows with Super." />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Use cases",
+      "item": "https://app.getsupers.com/use-cases/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Computer-use cache",
+      "item": "https://app.getsupers.com/use-cases/computer-use-cache/"
+    }]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "What is a computer-use cache?",
+      "acceptedAnswer": {"@type": "Answer","text": "A computer-use cache stores successful browser and desktop action sequences so an AI agent can replay them without re-planning the task each time."}
+    },{
+      "@type": "Question",
+      "name": "Why do repeated computer-use agents get expensive?",
+      "acceptedAnswer": {"@type": "Answer","text": "Most agents pay model costs for every run, even when the task is identical. Without caching, the agent repeats the same reasoning and actions."}
+    },{
+      "@type": "Question",
+      "name": "How is Super different?",
+      "acceptedAnswer": {"@type": "Answer","text": "Super reuses a computer-use cache so repeated workflows execute from saved actions instead of full agent runs."}
+    }]
+  }
+  </script>
+</head>
+<body>
+<div class="ambient-grid"></div>
+<div class="paper-noise"></div>
+
+<div class="page">
+  <nav class="nav">
+    <div class="brand">
+      <img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super" />
+    </div>
+    <div class="nav-links">
+      <a href="https://app.getsupers.com/use-cases/">Use cases</a>
+      <a href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Get started</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="shell hero-inner">
+      <h1>Computer-use cache for repeated AI agent workflows</h1>
+      <p class="hero-sub">If your agent runs the same browser or desktop task every day, you shouldn’t pay to re‑think it every time. A <strong>computer-use cache</strong> lets Super replay proven actions instead of starting from scratch.</p>
+      <div class="hero-actions">
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+        <a class="btn btn-white" href="#how">See how it works</a>
+      </div>
+      <div class="media-frame">
+        <video autoplay muted loop playsinline src="https://storage.googleapis.com/cheatlayer/landing/feature-computer-use-cache-impossible-agents.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="chapter">
+    <div class="shell">
+      <h2>How a computer-use cache works in practice</h2>
+      <div class="bento">
+        <div class="bento-item">
+          <h3>1. Run the task once</h3>
+          <p>Super performs real computer actions in a cloud browser or app — clicking, typing, navigating, and waiting for results.</p>
+        </div>
+        <div class="bento-item">
+          <h3>2. Actions are saved</h3>
+          <p>Successful action traces are stored as a reusable computer-use cache instead of being thrown away.</p>
+        </div>
+        <div class="bento-item">
+          <h3>3. Replay on repeat</h3>
+          <p>Future runs replay cached actions directly, avoiding repeated planning and model calls.</p>
+        </div>
+        <div class="bento-item">
+          <h3>4. Heal when needed</h3>
+          <p>If a page layout changes, Super can fall back to a fresh run and update the cache.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="shell">
+      <h2>Why operators care about cache‑backed computer use</h2>
+      <div class="compare-grid">
+        <div class="compare-card">
+          <h4>Without cache</h4>
+          <ul>
+            <li>Every run pays full model cost</li>
+            <li>Higher variance and flakiness</li>
+            <li>Hard to scale repetitive jobs</li>
+          </ul>
+        </div>
+        <div class="compare-card highlight">
+          <h4>With Super</h4>
+          <ul>
+            <li>Reusable computer-use cache</li>
+            <li>More deterministic replays</li>
+            <li>Cheaper repeated workflows</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Industry research increasingly highlights the need for traceability and reuse in agentic systems, especially as enterprises demand accountability for AI actions <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTFBQTDdBOEp2cnpNaDJLa2RhT3RJY08zXzhwM1ZpVDgyOE5lMGhNc3UtcEhfMS1vRHFSVGpFdVlXSVF1STd1aGx6VXdSTTN4N3FWa2wzZVBUZGpJRWFDUjl2VEdFVzJ0YTJjX0V0WnZYYTFGOEp5TFBPN0VR?oc=5" target="_blank">Tech Wire Asia</a>.</p>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="shell">
+      <h2>Super in the broader agent landscape</h2>
+      <div class="source-card">
+        <p><strong>ChatGPT</strong>, <strong>Gemini</strong>, and <strong>Grok</strong> are strong general assistants evolving toward agents. <strong>Siri</strong> is voice‑first and device‑embedded. <strong>Folk</strong> and <strong>Orchids</strong> represent niche automation approaches.</p>
+        <p><strong>Super</strong> focuses on durable computer work — running real apps and reusing a computer-use cache so repeated workflows improve over time instead of costing the same every run.</p>
+        <p>Developer‑level cache primitives exist in open tooling <a href="https://github.com/rohanarun/computer-use-cache" target="_blank">github.com</a>, while platform APIs from OpenAI and Google describe how raw computer actions are executed <a href="https://developers.openai.com/api/docs/guides/tools-computer-use" target="_blank">developers.openai.com</a>, <a href="https://ai.google.dev/gemini-api/docs/interactions/computer-use" target="_blank">ai.google.dev</a>. Super packages this into a personal agent experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="shell">
+      <h2>Related use cases</h2>
+      <ul class="cluster-links">
+        <li><a href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a></li>
+        <li><a href="https://app.getsupers.com/use-cases/book-rides-with-ai/">Book rides with AI</a></li>
+        <li><a href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a></li>
+        <li><a href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/">Meta Display AI assistant</a></li>
+        <li><a href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shell">
+      <h2>Ready to stop paying for the same computer work twice?</h2>
+      <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+    </div>
+  </section>
+</div>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
